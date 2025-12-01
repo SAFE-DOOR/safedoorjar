@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Door - 200+ Premium Packaging Features | Pan India Delivery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <div id="quoteCart" class="fixed bottom-24 left-6 z-50 bg-purple-600 text-white p-3 rounded-xl shadow-xl transition-transform transform hover:scale-105 cursor-pointer hidden">
+        <div class="flex items-center space-x-2">
+            <i class="fas fa-clipboard-list text-xl"></i>
+            <span id="quoteItemCount" class="font-bold text-lg">0 Items</span>
+        </div>
+        <p class="text-xs">Ready for Quick Quote</p>
+    </div>
+
+    <div id="alertBar" class="bg-yellow-500 text-white text-center py-2 fixed top-0 w-full z-50 transition-all duration-500 alert-slide-down">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <p class="text-sm font-medium flex items-center space-x-2">
+                <i class="fas fa-tags"></i>
+                <span>🔥 Bulk Discount: Get 10% OFF on orders above ₹50,000! Limited Time Offer.</span>
+            </p>
+            <button onclick="dismissAlertBar()" class="text-white hover:text-gray-900 transition-all text-xl">&times;</button>
+        </div>
+    </div>
+
+    <a href="https://wa.me/919958655713?text=Hello%20Safe%20Door,%20I%20am%20interested%20in%20packaging%20solutions." target="_blank" class="fixed bottom-6 right-6 z-50 whatsapp-float shadow-xl pulse">
+        <i class="fab fa-whatsapp text-white text-3xl"></i>
+    </a>
+
+    <nav id="mainNav" class="fixed top-8 md:top-0 w-full z-50 glass-effect shadow-lg transition-all duration-500">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 flex items-center justify-center">
+                        <span class="text-2xl font-bold text-transparent" style="background: linear-gradient(135deg, #000000 0%, #29b6f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Safe Door</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-item text-gray-700 hover:text-purple-600 transition">Home</a>
+                    <a href="#products" class="nav-item text-gray-700 hover:text-purple-600 transition">Products</a>
+                    <a href="#tracking" class="nav-item text-gray-700 hover:text-purple-600 transition">Track Order</a>
+                    <a href="#expert-connect" class="nav-item text-gray-700 hover:text-purple-600 transition">Expert Connect</a>
+                    <a href="#sample-request" class="nav-item text-gray-700 hover:text-purple-600 transition">Get Sample</a>
+                    <a href="#qa-certs" class="nav-item text-gray-700 hover:text-purple-600 transition">Certificates</a>
+                    <a href="#reviews" class="nav-item text-gray-700 hover:text-purple-600 transition">Reviews</a>
+                    <a href="#contact" class="nav-item text-gray-700 hover:text-purple-600 transition">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-700" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-purple-600">Home</a>
+                <a href="#products" class="block py-2 text-gray-700 hover:text-purple-600">Products</a>
+                <a href="#tracking" class="block py-2 text-gray-700 hover:text-purple-600">Track Order</a>
+                <a href="#expert-connect" class="block py-2 text-gray-700 hover:text-purple-600">Expert Connect</a>
+                <a href="#sample-request" class="block py-2 text-gray-700 hover:text-purple-600">Get Sample</a>
+                <a href="#qa-certs" class="block py-2 text-gray-700 hover:text-purple-600">Certificates</a>
+                <a href="#reviews" class="block py-2 text-gray-700 hover:text-purple-600">Reviews</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-purple-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center tech-grid pt-[90px] md:pt-20">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="slide-in">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                        <span class="text-gradient">Premium Packaging</span><br>
+                        Solutions for India
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        High-quality plastic jars and packaging materials delivered across India. 
+                        Trusted by 10,000+ businesses for their packaging needs.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Food Grade Materials</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Custom Sizes</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Bulk Orders</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <button onclick="scrollToProducts()" class="gradient-bg text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition transform hover:scale-105">
+                            Explore Products
+                        </button>
+                        <a href="https://wa.me/919958655713?text=I%20am%20interested%20in%20your%20packaging%20solutions." target="_blank" class="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-purple-600 hover:text-white transition flex items-center space-x-2">
+                            <i class="fab fa-whatsapp"></i> <span>Get Quote (WhatsApp)</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="relative floating">
+                    <img src="https://picsum.photos/seed/plasticjars/600/400" alt="Plastic Jars" class="rounded-2xl shadow-2xl">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center">
+                                <i class="fas fa-truck text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Pan India Delivery</p>
+                                <p class="text-sm text-gray-600">2-5 Business Days</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-6 bg-white border-t border-b">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-around items-center text-center text-gray-600 gap-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-lock text-purple-600"></i>
+                    <span class="text-sm font-semibold">Secure Payment</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-leaf text-purple-600"></i>
+                    <span class="text-sm font-semibold">Eco-friendly Options</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-indian-rupee-sign text-purple-600"></i>
+                    <span class="text-sm font-semibold">GST Invoices</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-shield-alt text-purple-600"></i>
+                    <span class="text-sm font-semibold">Quality Guaranteed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-4 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div id="priceAlertBanner" class="text-center font-semibold text-lg p-3 rounded-lg flex items-center justify-center space-x-3">
+                </div>
+        </div>
+    </section>
+    <section id="products" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Explore Our Jar Categories (29+ Variants)</h2>
+                <p class="text-xl text-gray-600">Select a category to view the full range and add items to your quote list.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="product-card bg-gray-50 p-6 rounded-xl shadow-lg cursor-pointer hover:shadow-2xl transition" 
+                     onclick="showProducts('small-jars')">
+                    <div class="flex justify-between items-center">
+                        <i class="fas fa-bottle-droplet text-4xl text-purple-600"></i>
+                        <span class="text-4xl font-bold text-gray-300">14+</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mt-4 mb-2">Small Jars (25 ML - 150 ML)</h3>
+                    <p class="text-gray-600">Cosmetics, Powders, Spices, Pujan Material</p>
+                </div>
+                
+                <div class="product-card bg-gray-50 p-6 rounded-xl shadow-lg cursor-pointer hover:shadow-2xl transition"
+                     onclick="showProducts('medium-jars')">
+                    <div class="flex justify-between items-center">
+                        <i class="fas fa-utensils text-4xl text-purple-600"></i>
+                        <span class="text-4xl font-bold text-gray-300">10+</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mt-4 mb-2">Medium Jars (200 ML - 650 ML)</h3>
+                    <p class="text-gray-600">Pickles, Honey, Protein, Kitchen Storage</p>
+                </div>
+
+                <div class="product-card bg-gray-50 p-6 rounded-xl shadow-lg cursor-pointer hover:shadow-2xl transition"
+                     onclick="showProducts('large-jars')">
+                    <div class="flex justify-between items-center">
+                        <i class="fas fa-warehouse text-4xl text-purple-600"></i>
+                        <span class="text-4xl font-bold text-gray-300">5+</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mt-4 mb-2">Large Jars (1 LTR - 6 LTR)</h3>
+                    <p class="text-gray-600">Ghee, Food Grains, Bulk Storage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productView" class="py-20 bg-gray-50 hidden">
+        <div class="container mx-auto px-4">
+            <button onclick="showProducts('index')" class="text-purple-600 font-semibold mb-6 hover:underline"><i class="fas fa-arrow-left mr-2"></i> Back to Categories</button>
+            <h2 id="productViewTitle" class="text-4xl font-bold mb-8 text-gradient"></h2>
+            
+            <div id="productDetailsGrid" class="grid md:grid-cols-4 gap-8">
+                </div>
+            
+            <div class="mt-16 text-center">
+                 <a href="#quote-calculator" class="gradient-bg text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition transform hover:scale-105">
+                    Jump to Quote Calculator <i class="fas fa-calculator ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="tracking" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Track Your Bulk Order Status 🚚</h2>
+                <p class="text-xl text-gray-600">Enter your order ID below for detailed, real-time tracking (Simulated).</p>
+            </div>
+            <div class="max-w-xl mx-auto bg-gray-50 p-8 rounded-xl shadow-2xl">
+                <form onsubmit="event.preventDefault(); trackOrder();" class="space-y-6">
+                    <div>
+                        <label for="orderIdInput" class="block text-gray-700 font-semibold mb-2">Order ID (e.g., SD-456)</label>
+                        <input type="text" id="orderIdInput" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600" placeholder="Enter your 6-digit order reference">
+                    </div>
+                    <button type="submit" class="w-full bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition transform hover:scale-105">
+                        Track Order
+                    </button>
+                </form>
+                
+                <div id="trackingResult" class="mt-6 p-4 border border-blue-300 bg-blue-50 rounded-lg hidden">
+                    <h4 id="trackingTitle" class="font-bold text-xl text-purple-700 mb-4"></h4>
+                    
+                    <div class="flex justify-between items-center mb-6 relative">
+                        <div id="progressBar" class="absolute h-1 bg-purple-300 top-1/2 transform -translate-y-1/2 left-0 right-0 z-0"></div>
+                        <div id="progressFill" class="absolute h-1 bg-purple-600 top-1/2 transform -translate-y-1/2 left-0 z-10 transition-all duration-500 ease-in-out"></div>
+
+                        <div class="tracking-step z-20 text-center" data-step="1">
+                            <i class="fas fa-clipboard-list text-2xl text-purple-600 bg-white p-2 rounded-full border-2 border-purple-600"></i>
+                            <p class="text-xs mt-1 text-gray-600">Confirmed</p>
+                        </div>
+                        <div class="tracking-step z-20 text-center" data-step="2">
+                            <i class="fas fa-boxes text-2xl text-purple-300 bg-white p-2 rounded-full border-2 border-purple-300"></i>
+                            <p class="text-xs mt-1 text-gray-400">Processing</p>
+                        </div>
+                        <div class="tracking-step z-20 text-center" data-step="3">
+                            <i class="fas fa-shipping-fast text-2xl text-purple-300 bg-white p-2 rounded-full border-2 border-purple-300"></i>
+                            <p class="text-xs mt-1 text-gray-400">Shipped</p>
+                        </div>
+                        <div class="tracking-step z-20 text-center" data-step="4">
+                            <i class="fas fa-home text-2xl text-purple-300 bg-white p-2 rounded-full border-2 border-purple-300"></i>
+                            <p class="text-xs mt-1 text-gray-400">Delivered</p>
+                        </div>
+                    </div>
+                    
+                    <div id="trackingTimeline" class="border-l-2 border-gray-300 pl-4 space-y-4">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quote-calculator" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Quick Quote Calculator 💰</h2>
+                <p class="text-xl text-gray-600">Estimate your bulk order price instantly (indicative cost only).</p>
+            </div>
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-2xl">
+                <form id="quoteForm" onsubmit="event.preventDefault(); calculateQuote();" class="space-y-6">
+                    <div>
+                        <label for="calcProduct" class="block text-gray-700 font-semibold mb-2">Select Product</label>
+                        <select id="calcProduct" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600">
+                            <option value="12.50">Plastic Jars (Approx ₹12.50/unit)</option>
+                            <option value="25.00">Packaging Boxes (Approx ₹25.00/unit)</option>
+                            <option value="8.75">Sealing Materials (Approx ₹8.75/unit)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="calcQuantity" class="block text-gray-700 font-semibold mb-2">Quantity (Minimum 500 units)</label>
+                        <input type="number" id="calcQuantity" min="500" value="1000" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600" placeholder="Enter quantity">
+                    </div>
+                    <button type="submit" class="w-full gradient-bg text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition transform hover:scale-105">
+                        Calculate Estimate
+                    </button>
+                </form>
+                <div id="quoteResult" class="mt-6 p-4 border border-purple-300 bg-purple-50 rounded-lg hidden">
+                    <h3 class="font-bold text-xl text-purple-700 mb-2">Estimated Price:</h3>
+                    <p id="quoteValue" class="text-3xl font-bold text-gradient">₹0.00</p>
+                    <p class="text-sm text-gray-600 mt-2">Note: This is an estimated cost and does not include GST or delivery charges. Contact us for final quotation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sample-request" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Request a Paid Sample Box 📦</h2>
+                <p class="text-xl text-gray-600">Test our quality before placing a bulk order (Flat fee: ₹499).</p>
+            </div>
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-2xl border-2 border-purple-300">
+                <form id="sampleForm" onsubmit="event.preventDefault(); submitSampleRequest();" class="space-y-6">
+                    <div>
+                        <label for="sampleName" class="block text-gray-700 font-semibold mb-2">Your Name / Company</label>
+                        <input type="text" id="sampleName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600" placeholder="Name or Company Name">
+                    </div>
+                    <div>
+                        <label for="samplePincode" class="block text-gray-700 font-semibold mb-2">Delivery Pincode (To confirm delivery)</label>
+                        <input type="text" id="samplePincode" required pattern="\d{6}" maxlength="6" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600" placeholder="6-digit Pincode">
+                    </div>
+                    <div>
+                        <label for="sampleProducts" class="block text-gray-700 font-semibold mb-2">Products of Interest (Max 3 items)</label>
+                        <textarea rows="3" id="sampleProducts" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600" placeholder="e.g., 5L HDPE Jar, 1Kg PET Jar, Corrugated Box (mention specific sizes/types)"></textarea>
+                    </div>
+                    <div class="text-center bg-yellow-100 p-3 rounded-lg">
+                        <p class="font-bold text-lg text-purple-700">Total Sample Fee: ₹499 (Non-refundable)</p>
+                        <p class="text-sm text-gray-600">Click below to proceed to WhatsApp payment confirmation.</p>
+                    </div>
+                    <button type="submit" class="w-full bg-yellow-400 text-purple-800 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-500 transition transform hover:scale-105 inline-flex items-center justify-center space-x-2">
+                        <i class="fab fa-whatsapp"></i> <span>Confirm Sample & Proceed to Pay</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="expert-connect" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Need Personalized Assistance? 🤝</h2>
+                <p class="text-xl text-gray-600">Connect directly with a dedicated Sales Expert for your specific product type.</p>
+            </div>
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-2xl border-2 border-green-200">
+                <h3 class="text-2xl font-bold text-center text-green-700 mb-6">Connect to Your Product Specialist</h3>
+                <form id="expertConnectForm" onsubmit="event.preventDefault(); connectExpert();" class="space-y-6">
+                    <div>
+                        <label for="expertProduct" class="block text-gray-700 font-semibold mb-2">Select Product Interest</label>
+                        <select id="expertProduct" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600">
+                            <option value="Jars">Plastic Jars</option>
+                            <option value="Boxes">Packaging Boxes</option>
+                            <option value="Sealing">Sealing Materials</option>
+                            <option value="Custom">Custom/Bulk Orders</option>
+                        </select>
+                    </div>
+                    <div id="expertConnectResult" class="mt-4 hidden p-4 border-l-4 border-purple-500 bg-purple-50 text-gray-800 rounded">
+                        </div>
+                    <button type="submit" class="w-full bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition transform hover:scale-105 inline-flex items-center justify-center space-x-2">
+                        <i class="fas fa-headset"></i> <span>Find My Expert & Connect</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section id="qa-certs" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Quality Assurance & Certifications 🔒</h2>
+                <p class="text-xl text-gray-600">Trust us with your packaging needs - our quality is globally certified.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-green-500">
+                    <i class="fas fa-certificate text-5xl text-green-500 mb-3"></i>
+                    <h3 class="font-bold text-xl mb-2">ISO 9001:2015</h3>
+                    <p class="text-sm text-gray-600">Certified for quality management systems.</p>
+                    <a href="#" onclick="alert('Viewing ISO Certificate PDF (Mock)'); return false;" class="text-purple-600 font-semibold text-sm mt-2 block hover:underline">View Certificate</a>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-blue-500">
+                    <i class="fas fa-utensils text-5xl text-blue-500 mb-3"></i>
+                    <h3 class="font-bold text-xl mb-2">Food Grade Approved</h3>
+                    <p class="text-sm text-gray-600">All jars meet strict food contact material standards.</p>
+                    <span class="text-gray-400 text-sm mt-2 block">FDA & FSSAI Compliant</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-orange-500">
+                    <i class="fas fa-recycle text-5xl text-orange-500 mb-3"></i>
+                    <h3 class="font-bold text-xl mb-2">Sustainability Verified</h3>
+                    <p class="text-sm text-gray-600">Commitment to using recyclable and safe materials.</p>
+                    <span class="text-gray-400 text-sm mt-2 block">Eco-Friendly Sourcing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Verified Customer Reviews ⭐</h2>
+                <p class="text-xl text-gray-600">See what buyers are saying about our quality and service.</p>
+            </div>
+
+            <div class="max-w-xl mx-auto bg-white p-6 rounded-xl shadow-lg mb-10">
+                <div class="text-center">
+                    <span class="text-5xl font-bold text-gradient">4.8</span>
+                    <span class="text-xl text-gray-500"> / 5.0</span>
+                    <div class="flex justify-center items-center text-yellow-400 text-2xl mt-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 mt-1">Based on 1,245 reviews</p>
+                </div>
+            </div>
+
+            <div id="reviewCardsContainer" class="flex overflow-x-auto snap-x snap-mandatory space-x-6 pb-4">
+                <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md slide-in border-t-4 border-purple-500 snap-center">
+                    <div class="flex items-center text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span class="ml-3 text-gray-700 font-semibold text-sm">5.0 | Plastic Jars</span>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"The jars are incredibly durable and the airtight lids are excellent for preserving freshness. Bulk order was delivered a day early. Highly satisfied!"</p>
+                    <div class="flex items-center">
+                        <img src="https://picsum.photos/seed/review1/40/40" alt="Reviewer 1" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-semibold text-purple-600">Vivek J.</p>
+                            <p class="text-xs text-gray-500">Verified Buyer from Pune</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md slide-in border-t-4 border-purple-500 snap-center">
+                    <div class="flex items-center text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        <span class="ml-3 text-gray-700 font-semibold text-sm">4.0 | Packaging Boxes</span>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"Boxes were great quality, but communication about the custom size took an extra day. Still, the final product was exactly what we needed."</p>
+                    <div class="flex items-center">
+                        <img src="https://picsum.photos/seed/review2/40/40" alt="Reviewer 2" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-semibold text-purple-600">Sunita M.</p>
+                            <p class="text-xs text-gray-500">E-commerce Seller, Bangalore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md slide-in border-t-4 border-purple-500 snap-center">
+                    <div class="flex items-center text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <span class="ml-3 text-gray-700 font-semibold text-sm">4.5 | Sealing Tapes</span>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"Very sticky and reliable tapes. Perfect for heavy carton sealing. Pricing is best in the market for this quality. Will order again next month."</p>
+                    <div class="flex items-center">
+                        <img src="https://picsum.photos/seed/review3/40/40" alt="Reviewer 3" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-semibold text-purple-600">Rohan K.</p>
+                            <p class="text-xs text-gray-500">Logistics Partner, Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 w-10"></div> 
+            </div>
+
+            <div class="max-w-2xl mx-auto mt-16 bg-white p-8 rounded-xl shadow-2xl border-2 border-purple-200">
+                <h3 class="text-2xl font-bold text-gradient mb-6 text-center">Write Your Own Review</h3>
+                <form id="reviewForm" onsubmit="event.preventDefault(); submitReview();" class="space-y-4">
+                    <div>
+                        <label for="reviewName" class="block text-gray-700 font-semibold mb-2">Your Name</label>
+                        <input type="text" id="reviewName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600" placeholder="e.g., Happy Customer">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">Product Rated</label>
+                        <select id="reviewProduct" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600">
+                            <option>Plastic Jars</option>
+                            <option>Packaging Boxes</option>
+                            <option>Sealing Materials</option>
+                            <option>General Service</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">Your Rating</label>
+                        <div id="ratingStars" class="text-3xl space-x-1">
+                            <i class="far fa-star text-yellow-400 cursor-pointer" data-rating="1" onclick="setRating(1)"></i>
+                            <i class="far fa-star text-yellow-400 cursor-pointer" data-rating="2" onclick="setRating(2)"></i>
+                            <i class="far fa-star text-yellow-400 cursor-pointer" data-rating="3" onclick="setRating(3)"></i>
+                            <i class="far fa-star text-yellow-400 cursor-pointer" data-rating="4" onclick="setRating(4)"></i>
+                            <i class="far fa-star text-yellow-400 cursor-pointer" data-rating="5" onclick="setRating(5)"></i>
+                        </div>
+                        <input type="hidden" id="reviewRating" value="0" required>
+                    </div>
+                    <div>
+                        <label for="reviewText" class="block text-gray-700 font-semibold mb-2">Your Detailed Review</label>
+                        <textarea rows="4" id="reviewText" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600" placeholder="Share your experience with us..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full gradient-bg text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition transform hover:scale-105">
+                        Submit Review
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Why Choose Safe Door?</h2>
+                <p class="text-xl text-gray-600">We deliver excellence in every package</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-gray-50 p-6 rounded-xl text-center hover:shadow-xl transition feature-card">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shipping-fast text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Fast Delivery</h3>
+                    <p class="text-gray-600">Quick delivery across all Indian states</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl text-center hover:shadow-xl transition feature-card">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-award text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Quality Assured</h3>
+                    <p class="text-gray-600">ISO certified packaging materials</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl text-center hover:shadow-xl transition feature-card">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-rupee-sign text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Best Prices</h3>
+                    <p class="text-gray-600">Competitive pricing with bulk discounts</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl text-center hover:shadow-xl transition feature-card">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">24/7 Support</h3>
+                    <p class="text-gray-600">Round the clock customer service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="delivery" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Pan India Delivery Network</h2>
+                <p class="text-xl text-gray-600">Serving every corner of India</p>
+            </div>
+            <div class="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl p-8 md:p-12 text-white">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="text-5xl font-bold mb-2">28</div>
+                        <p class="text-lg">States Covered</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl font-bold mb-2">500+</div>
+                        <p class="text-lg">Cities & Towns</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl font-bold mb-2">10K+</div>
+                        <p class="text-lg">Happy Customers</p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-lg mb-4">From Kashmir to Kanyakumari, we deliver everywhere!</p>
+                    <button onclick="checkDeliveryArea()" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition">
+                        Check Delivery in Your Area
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="gradient-bg p-8 rounded-2xl text-center shadow-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready for Safe & Reliable Packaging?</h2>
+                <p class="text-xl text-purple-100 mb-6">Start your bulk order or get a custom quote today!</p>
+                <a href="https://wa.me/919958655713?text=I%20want%20to%20place%20a%20bulk%20order." target="_blank" class="bg-yellow-400 text-purple-800 px-10 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition transform hover:scale-105 inline-flex items-center space-x-3 glow-whatsapp pulse">
+                    <i class="fab fa-whatsapp text-2xl"></i> <span>Message on WhatsApp Now!</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Get in Touch</h2>
+                <p class="text-xl text-gray-600">Ready to start your packaging journey?</p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Name</label>
+                                <input type="text" id="contactName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600" placeholder="Your Name">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Company</label>
+                                <input type="text" id="contactCompany" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600" placeholder="Company Name">
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                                <input type="email" id="contactEmail" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600" placeholder="your@email.com">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Phone</label>
+                                <input type="tel" id="contactPhone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600" placeholder="+91 98765 43210">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Product Interest</label>
+                            <select id="contactProduct" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600">
+                                <option>Plastic Jars</option>
+                                <option>Packaging Boxes</option>
+                                <option>Sealing Materials</option>
+                                <option>Multiple Products</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Message</label>
+                            <textarea rows="4" id="contactMessage" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600" placeholder="Tell us about your requirements..."></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="gradient-bg text-white px-10 py-3 rounded-lg font-semibold text-xl hover:shadow-lg transition transform hover:scale-105 pulse">
+                                Send Inquiry
+                            </button>
+                        </div>
+                    </form>
+                    <div class="mt-8 text-center border-t pt-6">
+                        <p class="text-lg font-semibold mb-3">Or Contact Us Directly:</p>
+                        <div class="flex flex-wrap justify-center gap-6">
+                            <span class="text-gray-700 flex items-center space-x-2">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+91 99586 55713 (Sales/Inquiry)</span>
+                            </span>
+                            <a href="https://wa.me/919958655713?text=Hello%20Safe%20Door,%20I%20have%20a%20query%20regarding%20packaging." target="_blank" class="text-green-600 hover:text-green-700 transition flex items-center space-x-2 font-bold">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                <span>WhatsApp (9958655713)</span>
+                            </a>
+                            <a href="mailto:sales@safedoor.in" class="text-gray-700 hover:text-purple-600 transition flex items-center space-x-2">
+                                <i class="fas fa-envelope"></i>
+                                <span>sales@safedoor.in</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 border-b border-gray-700 pb-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold">Safe Door</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Premium and Safe Packaging Solutions, Delivered Pan India.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-purple-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4 text-purple-300">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#products" class="text-gray-400 hover:text-white transition">Our Products</a></li>
+                        <li><a href="#expert-connect" class="text-gray-400 hover:text-white transition">Expert Connect</a></li>
+                        <li><a href="#reviews" class="text-gray-400 hover:text-white transition">Client Reviews</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4 text-purple-300">Business Hours</h4>
+                    <p class="text-gray-400 mb-2">
+                        <i class="fas fa-clock text-purple-400 mr-2"></i>
+                        **Mon - Sat:** 9:00 AM - 7:00 PM IST
+                    </p>
+                    <p class="text-gray-400">
+                        <i class="fas fa-calendar-times text-purple-400 mr-2"></i>
+                        **Sunday:** Closed
+                    </p>
+                    <p class="text-sm text-gray-500 mt-3">24/7 Support via Email/WhatsApp</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4 text-purple-300">Contact Info</h4>
+                    <p class="text-gray-400 flex items-center space-x-2 mb-2">
+                        <i class="fas fa-map-marker-alt text-purple-400"></i>
+                        <span>New Delhi, India (Head Office)</span>
+                    </p>
+                    <p class="text-gray-400 flex items-center space-x-2 mb-2">
+                        <i class="fas fa-envelope text-purple-400"></i>
+                        <a href="mailto:info@safedoor.in" class="hover:text-white transition">info@safedoor.in</a>
+                    </p>
+                    <p class="text-gray-400 flex items-center space-x-2">
+                        <i class="fas fa-phone-alt text-purple-400"></i>
+                        <span>+91 99586 55713 (Sales/Inquiry)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="text-center text-gray-400 text-sm">
+                &copy; 2025 Safe Door. All rights reserved. | Crafted with security in mind.
+            </div>
+        </div>
+    </footer>
+
+    <div id="productModal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-[100]">
+        <div class="bg-white rounded-xl shadow-2xl p-6 w-11/12 md:w-1/2 lg:w-1/3 modal-content-area">
+            <div class="flex justify-between items-start border-b pb-3 mb-4">
+                <h3 id="modalTitle" class="text-3xl font-bold text-gradient">Product Title</h3>
+                <button onclick="closeProductModal()" class="text-gray-500 hover:text-red-500 text-3xl transition">&times;</button>
+            </div>
+            <p id="modalDescription" class="text-gray-700 mb-6">Product long description.</p>
+            
+            <h4 class="font-semibold text-lg mb-2 text-purple-600">Key Specifications:</h4>
+            <ul id="modalSpecs" class="space-y-2 text-gray-700 mb-6">
+                </ul>
+            <div id="modalStockStatus" class="font-bold text-lg mb-4"></div>
+            
+            <div class="flex flex-col sm:flex-row gap-3">
+                <a id="modalWhatsappLink" href="https://wa.me/919958655713?text=I%20am%20interested%20in%20[Product%20Name].%20Please%20send%20bulk%20pricing." target="_blank" class="w-full bg-green-500 text-white px-4 py-3 rounded-lg font-semibold hover:bg-green-600 transition text-center inline-flex items-center justify-center space-x-2">
+                    <i class="fab fa-whatsapp"></i> <span>Get Price on WhatsApp</span>
+                </a>
+                <button onclick="closeProductModal()" class="w-full border-2 border-gray-300 text-gray-700 px-4 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    Continue Shopping
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

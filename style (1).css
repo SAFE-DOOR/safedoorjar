@@ -1,0 +1,199 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Apply Inter font globally */
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/* --- Alert Bar Animation --- */
+.alert-slide-down {
+    top: 0;
+}
+
+.alert-slide-up {
+    top: -50px; /* Hide above the viewport */
+}
+/* --- End Alert Bar Animation --- */
+
+
+/* Custom Gradient Background Class */
+.gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Glass Effect for Navigation */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Floating Animation for Hero Image */
+.floating {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Slide-in Animation for Hero Text and Testimonials*/
+.slide-in {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Product Card Hover Effects */
+.product-card {
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Tech Grid Background Pattern */
+.tech-grid {
+    background-image: 
+        linear-gradient(rgba(102, 126, 234, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(102, 126, 234, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+/* --- Stock Indicator Styles --- */
+.stock-indicator {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+}
+
+.high-stock {
+    background-color: #d1fae5; /* Green 100 */
+    color: #065f46; /* Green 800 */
+    border: 1px solid #10b981;
+}
+
+.low-stock {
+    background-color: #fef3c7; /* Yellow 100 */
+    color: #92400e; /* Yellow 800 */
+    border: 1px solid #f59e0b;
+}
+
+.out-of-stock {
+    background-color: #fee2e2; /* Red 100 */
+    color: #991b1b; /* Red 800 */
+    border: 1px solid #ef4444;
+}
+/* --- End Stock Indicator Styles --- */
+
+/* Fixed Floating WhatsApp Button */
+.whatsapp-float {
+    background-color: #25d366; /* WhatsApp Green */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Extra Feature: WhatsApp Glow Effect (used in CTA) */
+.glow-whatsapp {
+    box-shadow: 0 0 15px rgba(254, 215, 10, 0.8); /* Yellow glow */
+}
+
+/* Gradient Text Effect */
+.text-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Pulse Animation for Contact Button and CTA */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Navigation Item Hover Underline Effect */
+.nav-item {
+    position: relative;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+/* Modal Animation */
+.modal-content-area {
+    animation: scaleIn 0.3s ease-out;
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* --- NEW STYLES for Tracking Progress Bar --- */
+.tracking-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent; /* Ensure steps float above the bar */
+}
+
+.tracking-step i {
+    transition: all 0.3s ease;
+}
+
+/* Ensure the progress bar is correctly hidden when not in use, 
+   though Tailwind's utility classes in HTML largely handle this. */
+/* You might want to define a specific width for the progress fill in JS only, 
+   as done in the trackOrder function. */
